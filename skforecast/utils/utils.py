@@ -665,11 +665,11 @@ def check_predict_input(
                             exog          = exog.iloc[:0, ],
                             return_values = False
                         )
-        if not isinstance(exog_index, index_type):
-            raise TypeError(
-                (f"Expected index of type {index_type} for `exog`. "
-                 f"Got {type(exog_index)}.")
-            )   
+        # if not isinstance(exog_index, index_type):
+        #     raise TypeError(
+        #         (f"Expected index of type {index_type} for `exog`. "
+        #          f"Got {type(exog_index)}.")
+        #     )   
         if isinstance(exog_index, pd.DatetimeIndex):
             if not exog_index.freqstr == index_freq:
                 raise TypeError(
