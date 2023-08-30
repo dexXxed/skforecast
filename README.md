@@ -54,7 +54,7 @@ pip install skforecast==0.9.1
 Latest (unstable):
 
 ```bash
-pip install git+https://github.com/JoaquinAmatRodrigo/skforecast#master
+pip install git+https://github.com/dexxxed/skforecast#master
 ```
 
 Install the full version (all dependencies):
